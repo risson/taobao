@@ -44,8 +44,8 @@ class TbSpider(scrapy.Spider):
                 item['shops_loc'] = data['item_loc']
                 item['shops_name'] = data['nick']
                 item['shops_id'] = data['user_id']
-                item['goods_url'] = data['detail_url']
-                item['comment_count'] = data['comment_count']
+                item['goods_url'] = 'http'+data['detail_url']
+                item['comment_count'] = int(data['comment_count'])
                 item['goods_id'] = data['nid']
 
                 yield item
