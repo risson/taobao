@@ -13,8 +13,11 @@ class TaobaoItem(scrapy.Item):
     # name = scrapy.Field()
     title = scrapy.Field()
     comment_count=scrapy.Field()#评论数
-    shop_url =scrapy.Field()#店铺链接
     price =scrapy.Field()
     goods_url = scrapy.Field()
     shops_id = scrapy.Field()
-    goods_id = scrapy.Field()#商品ID
+    sales = scrapy.Field()
+    is_tmall = scrapy.Field()
+    shops_name = scrapy.Field()
+    shops_loc = scrapy.Field()
+    goods_id = scrapy.Field()
